@@ -18,7 +18,7 @@ body: Column(
   ],
 );
 ```
-![header height](http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img1.png)
+<img alt="header height"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img1.png" width="250" height="250" />|
 
 ## Step 2:
 For design own custom header using the Row widget inside the Column widget for the header customization.
@@ -117,4 +117,6 @@ void viewChanged(DateRangePickerViewChangedArgs args) {
 ```
 **[View document in Syncfusion Flutter Knowledge base](https://www.syncfusion.com/kb/11427/how-to-customize-the-header-view-of-the-flutter-date-range-picker)**
 
-![Custom header](http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img2.png)
+**Screenshot**
+
+<img alt="Custom header"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img2.png" width="250" height="250" />|
