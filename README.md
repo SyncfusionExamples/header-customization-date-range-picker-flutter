@@ -18,7 +18,7 @@ body: Column(
   ],
 );
 ```
-<img alt="header height"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img1.png" width="250" height="250" />|
+<img alt="header height"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img1.png" width="230" height="250" />|
 
 ## Step 2:
 For design own custom header using the Row widget inside the Column widget for the header customization.
@@ -119,4 +119,4 @@ void viewChanged(DateRangePickerViewChangedArgs args) {
 
 **Screenshot**
 
-<img alt="Custom header"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img2.png" width="250" height="250" />|
+<img alt="Custom header"  src="http://www.syncfusion.com/uploads/user/kb/flut/flut-864/flut-864_img2.png" width="230" height="250" />|
