@@ -41,7 +41,7 @@ Row(
           highlightColor: Colors.lightGreen,
           onPressed: () {
             setState(() {
-              _controller.backward();
+              _controller.backward!();
             });
           },
         )),
@@ -64,7 +64,7 @@ Row(
           highlightColor: Colors.lightGreen,
           onPressed: () {
             setState(() {
-              _controller.forward();
+              _controller.forward!();
             });
           },
         )),
@@ -104,13 +104,13 @@ Using the `onViewChanged` callback of the date picker, you can get the mid date 
 
 ```xml
 void viewChanged(DateRangePickerViewChangedArgs args) {
-  _startDate = (args.visibleDateRange.startDate
-      .difference(args.visibleDateRange.endDate)
-      .inDays);
-  var middleDate = (_startDate ~/ 2).toInt();
-  midDate = args.visibleDateRange.startDate.add(Duration(days: middleDate));
+  final DateTime visibleStartDate = args.visibleDateRange.startDate!;
+  final DateTime visibleEndDate = args.visibleDateRange.endDate!;
+  final int totalVisibleDays = (visibleStartDate.difference(visibleEndDate).inDays);
+  final DateTime midDate =
+      visibleStartDate.add(Duration(days: totalVisibleDays ~/ 2));
   headerString = DateFormat('MMMM yyyy').format(midDate).toString();
-  SchedulerBinding.instance.addPostFrameCallback((duration) {
+  SchedulerBinding.instance!.addPostFrameCallback((duration) {
     setState(() {});
   });
 }
